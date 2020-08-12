@@ -10,7 +10,9 @@ import nltk
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 import pickle
-
+import logging
+app.logger.addHandler(logging.StreamHandler(sys.stdout))
+app.logger.setLevel(logging.ERROR)
 
 model=pickle.load(open("model.pkl",'rb'))
 tf=pickle.load(open("tf.pkl",'rb'))
