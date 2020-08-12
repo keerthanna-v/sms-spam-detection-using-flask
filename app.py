@@ -41,7 +41,7 @@ def predict():
         data1 = " ".join(words)
         vect = tf.transform([data1]).toarray()
         my_prediction = model.predict(vect)
-    return render_template('result.html',prediction=my_prediction)
+    return render_template('result.html',prediction=my_prediction[0])
 
 if __name__ == '__main__':
     app.run(debug=True)
