@@ -29,14 +29,12 @@ header h1{
 <br/>
     <br/>
     <br/>
-
-	</div>
 {% if prediction[0]=="ham" %}
-<h1><strong style=" color:#F0F2F0;padding:10px;border-radius:20px; margin-left:650px;font-size:70px;border-radius:20px;
+<h1><strong style=" color:#F0F2F0; margin-left:650px;font-size:70px;
 opacity: 0.7;">HAM </strong></h1>
 
 {% elif prediction[0]=="spam" %}
-<h1><strong style="color:#F0F2F0;padding:10px; margin-left:650px;font-size:70px;border-radius:20px;opacity: 0.7;"> SPAM </strong></h1>
+<h1><strong style="color:#F0F2F0; margin-left:650px;font-size:70px;opacity: 0.7;"> SPAM </strong></h1>
 
 {% endif %}
 
